@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#24170e" />
+  <meta name="description" content="Mugsy's Woodland Rumble — a hand-drawn 1930s rubber-hose run-and-gun platformer." />
+  <title>Mugsy's Woodland Rumble</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="stage" aria-label="Mugsy's Woodland Rumble game">
+    <canvas id="game" aria-label="Game canvas: a cartoon forest platformer"></canvas>
+
+    <button id="startBtn" class="start-btn" aria-label="Start">START</button>
+
+    <div id="touchUI" class="touch-ui" aria-hidden="true">
+      <div class="touch-cluster move-cluster">
+        <button class="touch-btn move-left" data-input="left" aria-label="Move left">◀</button>
+        <button class="touch-btn move-right" data-input="right" aria-label="Move right">▶</button>
+      </div>
+      <div class="touch-cluster action-cluster">
+        <button class="touch-btn dash-btn" data-input="dash" aria-label="Dash"><span>DASH</span></button>
+        <button class="touch-btn shoot-btn" data-input="shoot" aria-label="Shoot"><span>SHOOT</span></button>
+        <button class="touch-btn jump-btn" data-input="jump" aria-label="Jump"><span>JUMP</span></button>
+      </div>
+    </div>
+
+    <button id="pauseBtn" class="pause-btn" aria-label="Pause" hidden>Ⅱ</button>
+
+    <div id="rotateHint" class="rotate-hint">↻ Turn your telephone for a wider picture</div>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
